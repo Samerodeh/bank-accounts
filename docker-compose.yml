@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: .
-    command: gunicorn project.wsgi:application
+    command: gunicorn bank.wsgi:application
     volumes:
       - .:/code
     ports:
